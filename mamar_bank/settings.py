@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Your secret key
-SECRET_KEY = env("SECRET_KEY")
+SECRET_KEY ='django-insecure-^4==#$cp5qqq1gj)_&#(bwxs*q6nvw_0h@i$6ezf*q=1*&r(gf'
 
 
 
