@@ -110,13 +110,18 @@ WSGI_APPLICATION = 'mamar_bank.wsgi.application'
 #        'PORT': env("DB_PORT"),
 #    }
 # }
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Replace this value with your local database's connection string.
+#         default='postgresql://mamarbank_5e1c_user:dpsIEP3XAoQFotNtCuMLqnsvUWAW73Ok@dpg-d2d33rbe5dus73c2jfsg-a.oregon-postgres.render.com/mamarbank_5e1c',
+#     )
+# }
 DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://mamarbank_5e1c_user:dpsIEP3XAoQFotNtCuMLqnsvUWAW73Ok@dpg-d2d33rbe5dus73c2jfsg-a.oregon-postgres.render.com/mamarbank_5e1c',
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
