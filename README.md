@@ -1,3 +1,3 @@
-Tested login and transaction features
-Identified defects and validated fixes
-Functionality works it or not
+1.Tested login and transaction features
+2. Identified defects and validated fixes
+3. Functionality checks
