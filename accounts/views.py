@@ -22,7 +22,7 @@ class UserRegistrationView(FormView):
 
 
 class UserLoginView(LoginView):
-    template_name = "user_login.html"
+    template_name = "accounts/user_login.html"
     def get_success_url(self):
         return reverse_lazy("home")
 
@@ -35,7 +35,7 @@ class UserLogoutView(LogoutView):
         return reverse_lazy("home")
 
 class UserBankAccountUpdateView(View):
-    template_name = 'profile.html'
+    template_name = 'accounts/profile.html'
 
     def get(self, request):
         form = UserUpdateForm(instance=request.user)
